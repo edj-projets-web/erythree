@@ -23,6 +23,24 @@ svg{
 	max-width: 940px;
     margin: auto;
 }
+.header #radio #button-left {
+    cursor: pointer;
+    animation-name: bounce;
+    animation-duration: 150ms;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    transform-origin: 50% 50%;
+}
+@keyframes bounce {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
 .main {
     padding : 5px;
     margin : 10px;
