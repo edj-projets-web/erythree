@@ -13,27 +13,24 @@ $.get('radio.svg', function(res) {
 		rotate(this, angle);
 	});
 
-	$('#radio #button-right').click(function(){
-		angle -= 10;
-		rotate(this, angle);
-	});
+	// $('#radio #button-right').click(function(){
+	// 	angle -= 10;
+	// 	rotate(this, angle);
+	// });
 })
-
-$("#info1").hide();
-$("#info2").hide();
 
 $(function () {
         $(window).scroll(function () {
              if ($(this).scrollTop() > 200 ) {
-                $('#info1').fadeIn(500);
+                $('#info1').removeClass('hid')
             } else {
-                $('#info1').fadeOut(500);
+                $('#info1').addClass('hid')
             }
 
             if ($(this).scrollTop() > 400 ) {
-                $('#info2').fadeIn(500);
+                $('#info2').removeClass('hid')
             } else {
-                $('#info2').fadeOut(500);
+                $('#info2').addClass('hid')
             }
     });
 })
