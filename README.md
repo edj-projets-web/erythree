@@ -1,6 +1,6 @@
-# Erythrée
+# TITRE DU PROJET
 
-[Lien vers le projet](https://edj-projets-web.github.io/erythree/)
+[Lien vers le projet](https://edj17-projets-web.github.io/boilerplate/)
 
 ## TODO
 
