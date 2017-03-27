@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    max-width: 1080px;
+    margin: auto;
+}
+
+svg{
+    width: 100%;
+    height: 100%;
+}
+
+h2{
+    line-height: 1.2;
+}
+
+a.bouton {
+padding: 15px 40px;
+background: #824900;
+color: white;
+font-weight: bold;
+font-size: 18px;
+}
+a.bouton:hover {
+background: #570906;
+color: #5EB6DD;
+}
+
+.intro {
+    background: url(../introtest.jpg) fixed right top;
+    background-size: cover;
+}
+
+.header {
+    padding : 5px;
+    margin : 10px;
+    margin-top: -45px;
+    max-width: 940px;
+}
+.header > #radio{
+    width: 100%;
+    margin: auto;
+    /*margin-left:7%;*/
+}
+.header #radio #button-left {
+    cursor: pointer;
+}
+.main {
+    padding : 5px;
+    margin : 10px;
+    margin-left: 18%;
+    font-size: 1.25em;
+    line-height: 1.6;
+    font-family: sans-serif;
+    flex : 3;
+}
+.main > .chapter{
+    margin-bottom: 15px;
+    
+}
+
+.main > .chapterintro{
+    margin-bottom: 15px;
+}
+.main > .encadre{
+    float:left;
+    width:30%;
+    font-size: 1.3em;
+    line-height: 1.2;
+    font-weight: bold;
+    margin:15px;
+    margin-left: -55px;
+}
+
+.main > .modedemploi {
+    font-size: 0.8em;
+
+}
+.side {
+    padding : 5px;
+    margin : 10px;
+    flex : 1;
+}
+.side > .info{
+    font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #303D3D;
+    margin-bottom: 50px;
+    transition: all 500ms linear;
+    opacity: 1;
+}
+.side .info.hid {
+    transform: translateX(100px);
+    opacity: 0;
+}
+.footer {
+    padding : 5px;
+    margin : 10px;
+    font-size: 1.1em;
+    text-align: right;
+    font-family: monospace;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+@media (max-width: 660px) {
+    .footer {
+        display: none;
+    }
+}
+
+.middle {
+    display: flex;
+    max-width: 940px;
+    margin-top: 50px;
+}
+
+.intro .middle {
+    max-width: 660px;
+}
+
+#video {
+    width: calc(100% + 100px);
+    margin: 30px -50px;
+}
+
+#videointro {
+    width: calc(100% + 100px);
+    margin: 30px -50px;
+}
