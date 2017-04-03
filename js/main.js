@@ -8,13 +8,12 @@ function rotate(element, angle) {
 }
 
 var radio = document.getElementById("radio");
+var player = document.getElementById('audio');
 
 $.get($(radio).data('image'), function(res) {
     var angle = 0;
 
     radio.appendChild(res.documentElement);
-
-    player = document.getElementById('audio');
 
     $('#radio #button-left').click(function() {
         angle += 360 / 10;
