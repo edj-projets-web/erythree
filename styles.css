@@ -35,15 +35,19 @@ color: #5EB6DD;
 }
 
 .intro {
-    background: url(../introtest.jpg) fixed right top;
+    background: url(../Introtest.jpg) fixed right top;
     background-size: cover;
+}
+
+#introimg {
+    display: none;
 }
 
 .header {
     padding : 5px;
     margin : 10px;
     margin-top: -45px;
-    max-width: 940px;
+    /*max-width: 940px;*/
 }
 .header > #radio{
     width: 100%;
@@ -64,11 +68,18 @@ color: #5EB6DD;
 }
 .main > .chapter{
     margin-bottom: 15px;
-    
+
 }
 
-.main > .chapterintro{
+.intro {
+    font-size: 1.4em;
+}
+
+.main .intro > .chapterintro > h2{
     margin-bottom: 15px;
+     font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+
 }
 .main > .encadre{
     float:left;
@@ -115,7 +126,18 @@ color: #5EB6DD;
     display: none;
 }
 
+.casque {
+    font-size: 1.1em;
+     font-family: 'Amatic SC', cursive;
+}
+
 @media (max-width: 660px) {
+    .intro {
+        background-image: none;
+    }
+    #introimg {
+        display: block;
+    }
     .footer {
         display: none;
     }
@@ -123,14 +145,22 @@ color: #5EB6DD;
 
 .middle {
     display: flex;
-    max-width: 940px;
+    /*max-width: 940px;*/
     margin-top: 50px;
 }
+
+
 
 .intro .middle {
     max-width: 660px;
 }
 
+#modedemploi {
+    margin-top:55px;
+    margin-right:5px;
+    margin-bottom:55px;
+    margin-left:0px;
+}
 #video {
     width: calc(100% + 100px);
     margin: 30px -50px;
