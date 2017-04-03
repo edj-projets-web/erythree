@@ -22,6 +22,23 @@ h2{
     line-height: 1.2;
 }
 
+a.bouton {
+padding: 15px 40px;
+background: #824900;
+color: white;
+font-weight: bold;
+font-size: 18px;
+}
+a.bouton:hover {
+background: #570906;
+color: #5EB6DD;
+}
+
+.intro {
+    background: url(../Introtest.jpg) fixed right top;
+    background-size: cover;
+}
+
 .header {
     padding : 5px;
     margin : 10px;
@@ -47,6 +64,14 @@ h2{
 }
 .main > .chapter{
     margin-bottom: 15px;
+
+}
+
+.main > .chapterintro > h2{
+    margin-bottom: 15px;
+     font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+
 }
 .main > .encadre{
     float:left;
@@ -56,6 +81,11 @@ h2{
     font-weight: bold;
     margin:15px;
     margin-left: -55px;
+}
+
+.main > .modedemploi {
+    font-size: 0.8em;
+
 }
 .side {
     padding : 5px;
@@ -99,7 +129,17 @@ h2{
     max-width: 940px;
     margin-top: 50px;
 }
+
+.intro .middle {
+    max-width: 660px;
+}
+
 #video {
+    width: calc(100% + 100px);
+    margin: 30px -50px;
+}
+
+#videointro {
     width: calc(100% + 100px);
     margin: 30px -50px;
 }
