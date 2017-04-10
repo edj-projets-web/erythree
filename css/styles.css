@@ -169,7 +169,12 @@ color: #5EB6DD;
     margin: 30px -50px;
 }
 
+#plan {
+    padding-right: 10px;
+
+}
+
 .soundcite-loaded {
     border-radius: 0;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
