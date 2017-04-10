@@ -60,21 +60,21 @@ color: #5EB6DD;
     font-size: 1.25em;
     line-height: 1.6;
     font-family: sans-serif;
-
     width: calc(100% - 300px);
 }
+
 .main > .chapter{
     margin-bottom: 15px;
 
 }
 
-.main > .chapterintro > h2{
+.main .chapterintro > h2{
     margin-bottom: 15px;
      font-family: 'Amatic SC', cursive;
     font-size: 50px;
 
 }
-.main > .encadre{
+.main .encadre{
     float:left;
     width:30%;
     font-size: 1.3em;
@@ -84,14 +84,19 @@ color: #5EB6DD;
     margin-left: -55px;
 }
 
-.main > .modedemploi {
+.main .modedemploi {
     font-size: 0.8em;
 
 }
 
-.main > .inter {
+.main .inter {
     font-size: 1.3em
     font-weight: bold;
+}
+
+.intro .main {
+    width: auto;
+    max-width:800px;
 }
 .side {
     padding : 5px;
@@ -162,4 +167,9 @@ color: #5EB6DD;
 #videointro {
     width: calc(100% + 100px);
     margin: 30px -50px;
+}
+
+.soundcite-loaded {
+    border-radius: 0;
+    margin-bottom: 10px;
 }
