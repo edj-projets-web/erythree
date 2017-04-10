@@ -39,15 +39,11 @@ color: #5EB6DD;
     background-size: cover;
 }
 
-#introimg {
-    display: none;
-}
-
 .header {
     padding : 5px;
     margin : 10px;
     margin-top: -45px;
-    /*max-width: 940px;*/
+    max-width: 940px;
 }
 .header > #radio{
     width: 100%;
@@ -64,18 +60,15 @@ color: #5EB6DD;
     font-size: 1.25em;
     line-height: 1.6;
     font-family: sans-serif;
-    flex : 3;
+
+    width: calc(100% - 300px);
 }
 .main > .chapter{
     margin-bottom: 15px;
 
 }
 
-.intro {
-    font-size: 1.4em;
-}
-
-.main .intro > .chapterintro > h2{
+.main > .chapterintro > h2{
     margin-bottom: 15px;
      font-family: 'Amatic SC', cursive;
     font-size: 50px;
@@ -95,13 +88,31 @@ color: #5EB6DD;
     font-size: 0.8em;
 
 }
+
+.main > .inter {
+    font-size: 1.3em
+    font-weight: bold;
+}
 .side {
     padding : 5px;
     margin : 10px;
     flex : 1;
 }
-.side > .info{
-    font-size: 1em;
+
+.with-side {
+    position: relative;
+}
+
+.with-side .info {
+    position: absolute;
+    left:100%;
+    top:0;
+    width: 200px;
+    padding-left: 10px;
+}
+
+.info{
+    font-size: 1.2rem;
     font-weight: bold;
     font-family: sans-serif;
     color: #303D3D;
@@ -109,10 +120,11 @@ color: #5EB6DD;
     transition: all 500ms linear;
     opacity: 1;
 }
-.side .info.hid {
+.info.hid {
     transform: translateX(100px);
     opacity: 0;
 }
+
 .footer {
     padding : 5px;
     margin : 10px;
@@ -126,18 +138,7 @@ color: #5EB6DD;
     display: none;
 }
 
-.casque {
-    font-size: 1.1em;
-     font-family: 'Amatic SC', cursive;
-}
-
 @media (max-width: 660px) {
-    .intro {
-        background-image: none;
-    }
-    #introimg {
-        display: block;
-    }
     .footer {
         display: none;
     }
@@ -145,22 +146,14 @@ color: #5EB6DD;
 
 .middle {
     display: flex;
-    /*max-width: 940px;*/
+    max-width: 940px;
     margin-top: 50px;
 }
-
-
 
 .intro .middle {
     max-width: 660px;
 }
 
-#modedemploi {
-    margin-top:55px;
-    margin-right:5px;
-    margin-bottom:55px;
-    margin-left:0px;
-}
 #video {
     width: calc(100% + 100px);
     margin: 30px -50px;
