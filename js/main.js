@@ -1,15 +1,16 @@
 var video = document.getElementById("video"),
     fraction = 0.8,
-    radioTracks = [,
-      "./radio audio 9.wav",
-      "./radio audio 1.wav",
-      "./radio audio 2.wav",
-      "./radio audio 3.wav",
-      "./radio audio 4.wav",
-      "./radio audio 5.wav",
-      "./radio audio 6.wav",
-      "./radio audio 7.wav",
-      "./radio audio 8.wav"
+    radioTracks = [
+      null,
+      "./audio/radio-audio-1.ogg",
+      "./audio/radio-audio-2.ogg",
+      "./audio/radio-audio-3.ogg",
+      "./audio/radio-audio-4.ogg",
+      "./audio/radio-audio-5.ogg",
+      "./audio/radio-audio-6.ogg",
+      "./audio/radio-audio-7.ogg",
+      "./audio/radio-audio-8.ogg",
+      "./audio/radio-audio-9.ogg"
     ]
 
 function rotate(element, angle) {
@@ -36,8 +37,11 @@ $.get($(radio).data('image'), function(res) {
         track = track >= radioTracks.length ? 0 : track;
         // Update current audio source
         player.src = radioTracks[track];
-        player.load();
-        player.play();
+        // Stop the player when the track is null
+        if(radioTracks[track] !== null) {
+          player.load();
+          player.play();
+        }
     });
 });
 
