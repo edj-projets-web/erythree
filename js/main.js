@@ -1,5 +1,16 @@
 var video = document.getElementById("video"),
-    fraction = 0.8;
+    fraction = 0.8,
+    radioTracks = [,
+      "./radio audio 9.wav",
+      "./radio audio 1.wav",
+      "./radio audio 2.wav",
+      "./radio audio 3.wav",
+      "./radio audio 4.wav",
+      "./radio audio 5.wav",
+      "./radio audio 6.wav",
+      "./radio audio 7.wav",
+      "./radio audio 8.wav"
+    ]
 
 function rotate(element, angle) {
     var coord = $(element)[0].getBBox();
@@ -12,12 +23,20 @@ var player = document.getElementById('audio');
 
 $.get($(radio).data('image'), function(res) {
     var angle = 0;
+    var track = 0;
 
     radio.appendChild(res.documentElement);
 
     $('#radio #button-left').click(function() {
         angle += 360 / 10;
+        // Move the button
         rotate(this, angle);
+        // Find the current track
+        track = Math.min(track + 1, radioTracks.length);
+        track = track >= radioTracks.length ? 0 : track;
+        // Update current audio source
+        player.src = radioTracks[track];
+        player.load();
         player.play();
     });
 });
